@@ -1,0 +1,49 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    ;margin: 1%;
+    padding: 0;
+    cursor: url('dollarsign.png'), pointer;
+}
+
+h1{text-align: center;
+color: gold;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    height: 80vh;
+}
+#monopolyman{
+    animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes move {
+
+    0%{transform: translateX(0vw)}
+    50%{transform: translateX(20vw)}
+    100%{transform: translateX(0vw)}
+}
+button {
+    background-color: gold;
+    color:black;
+    border: 3px dashed gold;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+h2 {
+    position: relative;
+    animation: slideRight 8s linear infinite;
+    color: gold;
+    text-align: center;
+}
+
+@keyframes slideRight {
+    0%   { left: -100vw; }
+    100% { left: 100vw; }
+}
